@@ -1,0 +1,339 @@
+/*Basic CSS reset*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Desktop display*/
+/*Navigation*/
+.parent{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    background-color: #145751;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 40px;
+}
+
+nav li{
+    padding-top: 10px;
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav li a{
+    text-decoration: inherit;
+    color: #fff;
+    font-weight: 600;
+}
+
+nav li a:hover{
+    cursor: pointer;
+    color: #ffe68e;
+}
+
+/*Content*/
+.container{
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    overflow-x: none;
+    flex-wrap: wrap;
+}
+
+.about{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about p{
+    width: 50%;
+    text-align: center;
+}
+
+.about ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+   }
+
+.about li{
+    list-style: none;
+    text-align: center;
+    margin: 5px;
+   }
+
+.about li p{
+    visibility: hidden;
+}
+
+.about li img{
+    cursor: pointer;
+}
+
+.about li img:hover + p{
+    visibility: visible;
+    color: black;
+    background-color: #ffe68e;
+    border-radius: .4em;
+}
+
+.about li a{
+    text-decoration: inherit;
+}
+
+.about span {
+    text-align: center;
+    background-color: #2DE5AD;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#greet{
+    background: #3caea3;
+    width: fit-content;
+    border-radius: .4em;
+    margin: 25px;
+    display: inline-flex;
+    animation: animation 1s infinite alternate;
+}
+
+.skills{
+    text-align: center;
+}
+
+.skills h2{
+    margin: 20px;
+}
+
+.skills ul{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills li{
+    list-style: none;
+    flex-grow: 1;
+}
+
+.projects{
+    text-align: center;
+}
+
+.projects ul{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects li{
+    list-style: none;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.projects li a{
+    text-decoration: inherit;
+    color: #145751;
+}
+
+#hash{
+    background-color: #f6d55c;
+    border-radius: .4em;
+    width: fit-content;
+    display: inline;
+}
+
+/*images*/
+.about img {
+    width: 200px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.about li img{
+    width: 60px;
+}
+
+.skills li img{
+    width: 150px;
+    height: 150px;
+}
+
+#icon{
+    width: 50px;
+    height: 50px;
+}
+
+.projects li img{
+    width: 600px;
+    height: 300px;
+}
+
+.projects li img:hover{
+    opacity: 0.7;
+}
+
+
+/*Mobile display*/
+@media screen and (min-width:480px) and (max-width:1200px){
+    /*Navigation*/
+    nav ul{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li{
+        list-style: none;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    /*Content*/
+   .container{
+       display: flex;
+       flex-flow: column;
+       align-items: center;
+       gap: 30px;
+       overflow-x: none;
+   }
+
+   .about{
+     text-align: center;
+     margin: 20px;
+   }
+
+   .about p{
+       width: auto;
+   }
+
+   .about img {
+    width: 150;
+    height: 150;
+    align-self: center;
+    }
+
+   .about h2{
+    margin: 10px;
+   }
+
+   .about span{
+    background-color: #2DE5AD;
+    width: 100%;
+    }
+
+   .about ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+   }
+
+   .about li{
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+   }
+
+   .about li p{
+    visibility: visible;
+    }
+
+    .about li a{
+        text-decoration: inherit;
+        color: black;
+    }
+
+   .skills p{
+       margin: 10px;
+   }
+
+   .skills{
+       text-align: center;
+   }
+
+   .skills ul{
+       display: flex;
+       flex-flow: row;
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+
+   .skills li{
+       list-style: none;
+       flex-grow: 1;
+       margin: 10px;
+   }
+
+   .projects{
+       text-align: center;
+   }
+
+   .projects ul{
+       display: flex;
+       flex-flow: column;
+   }
+
+   .projects li{
+       list-style: none;
+       flex-grow: 1;
+       margin: 10px;
+       width: 100%;
+   }
+
+   .projects h1, h2{
+       margin: 10px;
+   }
+
+   /*Images*/
+    .about img {
+    width: 200px;
+    height: 150px;
+    }
+
+    .about li img{
+    width: 50px;
+    height: 50px;
+    }
+
+    .skills li img{
+    width: 150px;
+    height: 150px;
+    }
+
+    .projects li img{
+    width: 400px;
+    height: 200px;
+    }
+
+    #icon{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/*Animations*/
+@keyframes animation{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-10px);}
+}
