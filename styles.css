@@ -195,7 +195,17 @@ nav li a:hover{
 
 
 /*Mobile display*/
-@media screen and (min-width:480px) and (max-width:1200px){
+@media screen and (min-width:360px) and (max-width:1200px){
+    .parent{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: auto;
+        background-color: #145751;
+        z-index: 1;
+    }
+
     /*Navigation*/
     nav ul{
         display: flex;
@@ -331,6 +341,14 @@ nav li a:hover{
         height: 30px;
     }
 }
+
+@media screen and (min-width:360px) and (max-width:480px){
+    .projects li img{
+        width: 300px;
+        height: 150px;
+    }
+}
+
 
 /*Animations*/
 @keyframes animation{
