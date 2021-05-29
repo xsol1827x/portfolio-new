@@ -195,7 +195,7 @@ nav li a:hover{
 
 
 /*Mobile display*/
-@media screen and (min-width:360px) and (max-width:1200px){
+@media screen and (min-width:360px) and (max-width:1440px){
     .parent{
         position: sticky;
         top: 0;
