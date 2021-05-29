@@ -89,6 +89,7 @@ nav li a:hover{
     color: black;
     background-color: #ffe68e;
     border-radius: .4em;
+    width: 100%;
 }
 
 .about li a{
